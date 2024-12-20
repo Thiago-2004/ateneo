@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,65 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+/* Estilos generales para el Hero Section */
+.hero {
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(''); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  color: #000000; /* Texto en blanco */
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255); /* Capa oscura semitransparente */
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(8 184 255); /* Celeste llamativo */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #00e5ff; /* Botón celeste */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #00b8d4; /* Celeste más oscuro */
+  transform: scale(1.05); /* Efecto de escala */
 }
